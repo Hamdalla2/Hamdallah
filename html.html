@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            min-height: 99vh;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #404040;
+            font-family: "Google sans";
+            font-style: italic;
+
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            color: #404040;
+            text-decoration: none;
+        }
+
+        section {
+            display: flex;
+            gap: 10px;
+        }
+
+        .page-title {
+            font-size: 32px;
+            line-height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .contacts-link {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contacts-label {
+            display: inline-block;
+            min-width: 70px;
+        }
+
+        .language-label {
+            display: inline-block;
+            min-width: 60px;
+        }
+
+        .colored {
+            color: #0099D2
+        }
+
+        .box {
+            width: fit-content;
+            border: 1px solid rgb(200, 200, 200);
+            box-shadow: rgb(200, 200, 200) 2px 2px 0px 0px;
+            padding: 15px;
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: calc(50% - 30px);
+        }
+
+        .technology-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .company-image,
+        .technology-image {
+            width: 50px;
+            height: 50px;
+        }
+
+        .projects {
+            width: calc(50% - 30px);
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+
+        .company-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .company-position {
+            text-align: center;
+        }
+
+        .working-period {
+            font-style: normal;
+            min-width: 73px;
+        }
+
+        .project-image {
+            width: 35px;
+            height: 35px;
+        }
+
+        .language-container {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-title">
+        <span class="my-name">Hamdallah Fatayer</span><span class="my-job colored">Full Stack Web Developer</span>
+    </div>
+    <hr />
+    <section class="first-section">
+        <div class="technologies box">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="technology-container"
+                title="javascript">
+                <img src="https://i.imgur.com/Y4wEjL3.png" class="technology-image" alt="javascript" />
+                <p>99%</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="technology-container" title="css">
+                <img src="https://i.imgur.com/GBKFdd0.png" class="technology-image" alt="css" />
+                <p>95%</p>
+            </a>
+            <a href="https://www.typescriptlang.org/docs/" class="technology-container" title="typescript">
+                <img src="https://i.imgur.com/IOfMOAG.png" class="technology-image" alt="typescript" />
+                <p>90%</p>
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="technology-container" title="html">
+                <img src="https://i.imgur.com/rIaFQGP.png" class="technology-image" alt="html" />
+                <p>90%</p>
+            </a>
+            <a href="https://git-scm.com/doc" class="technology-container" title="git">
+                <img src="https://i.imgur.com/Ry039Uj.png" class="technology-image" alt="git" />
+                <p>85%</p>
+            </a>
+            <a href="https://api.jquery.com/" class="technology-container" title="jquery">
+                <img src="https://i.imgur.com/4vlzN7c.png" class="technology-image" alt="jquery" />
+                <p>85%</p>
+            </a>
+            <a href="https://legacy.reactjs.org/docs/getting-started.html" class="technology-container" title="react">
+                <img src="https://i.imgur.com/asSiyKo.png" class="technology-image" alt="react" />
+                <p>85%</p>
+            </a>
+            <a href="https://redux.js.org/" class="technology-container" title="redux">
+                <img src="https://i.imgur.com/W4Aai1C.png" class="technology-image" alt="redux" />
+                <p>80%</p>
+            </a>
+            <a href="https://nodejs.org/fa/docs" class="technology-container" title="node js">
+                <img src="https://i.imgur.com/ltUblIq.png" class="technology-image" alt="node js" />
+                <p>80%</p>
+            </a>
+            <a href="https://docs.python.org/3/" class="technology-container" title="python">
+                <img src="https://i.imgur.com/6zLNebP.png" class="technology-image" alt="python" />
+                <p>75%</p>
+            </a>
+            <a href="https://angular.io/docs" class="technology-container" title="angular">
+                <img src="https://i.imgur.com/07m9ty0.png" class="technology-image" alt="angular" />
+                <p>70%</p>
+            </a>
+            <a href="https://www.mongodb.com/docs/" class="technology-container" title="mongodb">
+                <img src="https://i.imgur.com/xpYGY6F.png" class="technology-image" alt="mongodb" />
+                <p>70%</p>
+            </a>
+            <a href="https://reactnative.dev/docs/getting-started" class="technology-container" title="react native">
+                <img src="https://i.imgur.com/F392Iji.png" class="technology-image" alt="react native" />
+                <p>65%</p>
+            </a>
+            <a href="https://dev.mysql.com/doc/" class="technology-container" title="mysql">
+                <img src="https://i.imgur.com/oNgOHhN.png" class="technology-image" alt="mysql" />
+                <p>60%</p>
+            </a>
+            <a href="https://expressjs.com/" class="technology-container" title="express js">
+                <img src="https://i.imgur.com/OcIdNEs.png" class="technology-image" alt="express js" />
+                <p>60%</p>
+            </a>
+            <a href="https://docs.docker.com/" class="technology-container" title="docker">
+                <img src="https://i.imgur.com/uzkBrGg.png" class="technology-image" alt="docker" />
+                <p>55%</p>
+            </a>
+            <a href="https://docs.oracle.com/en/java/" class="technology-container" title="java">
+                <img src="https://i.imgur.com/eoYl070.png" class="technology-image" alt="java" />
+                <p>50%</p>
+            </a>
+            <a href="https://www.php.net/docs.php" class="technology-container" title="php">
+                <img src="https://i.imgur.com/oX3psrK.png" class="technology-image" alt="php" />
+                <p>50%</p>
+            </a>
+            <a href="https://www.linux.org/" class="technology-container" title="linux">
+                <img src="https://i.imgur.com/LGNqemh.png" class="technology-image" alt="linux" />
+                <p>45%</p>
+            </a>
+            <a href="https://www.postgresql.org/docs/" class="technology-container" title="postgres">
+                <img src="https://i.imgur.com/mszkP80.png" class="technology-image" alt="postgres" />
+                <p>40%</p>
+            </a>
+            <a href="https://threejs.org/docs/" class="technology-container" title="three js">
+                <img src="https://i.imgur.com/8Uwj6xP.png" class="technology-image" alt="three js" />
+                <p>35%</p>
+            </a>
+            <a href="https://flask.palletsprojects.com/en/2.3.x/" class="technology-container" title="flask">
+                <img src="https://i.imgur.com/lcFqMUw.png" class="technology-image" alt="flask" />
+                <p>30%</p>
+            </a>
+            <a href="https://docs.djangoproject.com/en/4.2/" class="technology-container" title="django">
+                <img src="https://i.imgur.com/8vDEqM7.png" class="technology-image" alt="django" />
+                <p>20%</p>
+            </a>
+            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" class="technology-container" title="c#">
+                <img src="https://i.imgur.com/jshKfif.png" class="technology-image" alt="c#" />
+                <p>15%</p>
+            </a>
+            <a href="https://jestjs.io/docs/getting-started" class="technology-container" title="jest">
+                <img src="https://i.imgur.com/8fFm5i6.png" class="technology-image" alt="jest" />
+                <p>10%</p>
+            </a>
+        </div>
+        <div class="projects box">
+            <a href="https://www.xngage.com/" class="company" title="xngage">
+                <img src="https://i.imgur.com/9AJWK2m.png" class="company-image" alt="xngage" />
+                <div class="company-title">
+                    <span class="company-name">Xngage</span>
+                    <span class="company-position">As a Frontend Developer</span>
+                </div>
+                <span class="working-period">2022 - Now</span>
+            </a>
+
+            <div class="projects-container">
+                <a href="https://www.plumberssupplyco.com/" class="project" title="plumbers">
+                    <img src="https://i.imgur.com/6gPTKCX.png" class="project-image" alt="plumbers" />
+                </a>
+                <a href="https://www.torrco.com/" class="project" title="torrco">
+                    <img src="https://i.imgur.com/cv7yI0Y.png" class="project-image" alt="torrco" />
+                </a>
+                <a href="https://eecoonline.com/" class="project" title="eeco">
+                    <img src="https://i.imgur.com/7N2CjoS.png" class="project-image" alt="eeco" />
+                </a>
+                <a href="https://www.sonance.com/" class="project" title="sonance">
+                    <img src="https://i.imgur.com/vtCDBQR.png" class="project-image" alt="sonance" />
+                </a>
+                <a href="https://www.kellersupply.com/home.php" class="project" title="keller">
+                    <img src="https://i.imgur.com/NZ2h1NE.png" class="project-image" alt="keller" />
+                </a>
+                <a href="https://www.wernerelectric.com/" class="project" title="werner">
+                    <img src="https://i.imgur.com/g0tcwk3.png" class="project-image" alt="werner" />
+                </a>
+                <a href="https://www.pacificplumbing.com/" class="project" title="pacific">
+                    <img src="https://i.imgur.com/MyEEQtB.png" class="project-image" alt="pacific" />
+                </a>
+                <a href="https://www.guestsupply.com/" class="project" title="guestsupply">
+                    <img src="https://i.imgur.com/WQqH75J.png" class="project-image" alt="guestsupply" />
+                </a>
+                <a href="https://www.shopibt.com/" class="project" title="ibt">
+                    <img src="https://i.imgur.com/dODOchn.png" class="project-image" alt="ibt" />
+                </a>
+                <a href="https://www.fortgarryindustries.com/" class="project" title="fgi">
+                    <img src="https://i.imgur.com/ha6T3Sy.png" class="project-image" alt="fgi" />
+                </a>
+                <a href="https://www.easternfirst.com/" class="project" title="eastern">
+                    <img src="https://i.imgur.com/LuX4JEb.png" class="project-image" alt="eastern" />
+                </a>
+            </div>
+            <hr />
+            <a href="https://www.itgsoftware.com/" class="company" title="itg">
+                <img src="https://i.imgur.com/D3invVR.png" class="company-image" alt="itg" />
+                <div class="company-title">
+                    <span class="company-name">Infinite Tiers Group</span>
+                    <span class="company-position">As a Backend Developer</span>
+                </div>
+                <span class="working-period">2021 - 2022</span>
+            </a>
+            <div class="projects-container">
+                <a href="https://www.partycity.com/" class="project" title="partycity">
+                    <img src="https://i.imgur.com/ru9P3hk.png" class="project-image" alt="partycity" />
+                </a>
+                <a href="https://www.saksfifthavenue.com/" class="project" title="saksfifthavenue">
+                    <img src="https://i.imgur.com/bPgUsmm.png" class="project-image" alt="saksfifthavenue" />
+                </a>
+                <a href="https://www.birkenstock.com/us" class="project" title="birkenstock">
+                    <img src="https://i.imgur.com/19ySnOr.png" class="project-image" alt="birkenstock" />
+                </a>
+                <a href="https://www.saksoff5th.com/" class="project" title="saksoff5th">
+                    <img src="https://i.imgur.com/SXnjiF2.png" class="project-image" alt="saksoff5th" />
+                </a>
+            </div>
+            <hr />
+            <a href="https://www.linkedin.com/company/rebootkamparchive/" class="company" title="rbk">
+                <img src="https://i.imgur.com/PDi3q8L.png" class="company-image" alt="rbk" />
+                <div class="company-title">
+                    <span class="company-name">ReBootKamp</span>
+                    <span class="company-position">12hours per day training</span>
+                </div>
+                <span class="working-period">2020 - 2021</span>
+            </a>
+            <div class="projects-container">
+                <a href="https://github.com/Hamdalla2/Twittler" class="project" title="twittler">
+                    <img src="https://i.imgur.com/zIZlmr4.png" class="project-image" alt="twittler" />
+                </a>
+                <a href="https://github.com/Hamdalla2/family-todo" class="project" title="family-todo">
+                    <img src="https://i.imgur.com/fBd0vvp.png" class="project-image" alt="family-todo" />
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section class="second-section">
+        <div class="contacts box">
+            <a href="" class="contacts-link">
+                <span class="contacts-label">Portfolio</span>
+                <span class="contacts-value">Hamdalla2</span>
+            </a>
+            <a href="mailto:Hamdalla9@gmail.com" class="contacts-link">
+                <span class="contacts-label">E-Mail</span>
+                <span class="contacts-value">Hamdalla9@gmail.com</span>
+            </a>
+            <a href="https://github.com/Hamdalla2" class="contacts-link">
+                <span class="contacts-label">GitHub</span>
+                <span class="contacts-value">Hamdalla2</span>
+            </a>
+            <a href="tel:00970592387221" class="contacts-link">
+                <span class="contacts-label">Phone</span>
+                <span class="contacts-value">0097-0592387221</span>
+            </a>
+            <div class="contacts-link">
+                <span class="contacts-label">Age</span>
+                <span class="contacts-value">30</span>
+            </div>
+        </div>
+        <div class="languages box">
+            <div class="language-container">
+                <span class="language-label">Arabic</span>
+                <span class="language-value">Native</span>
+            </div>
+            <div class="language-container">
+                <span class="language-label">English</span>
+                <span class="language-value">Fluent</span>
+            </div>
+            <div class="language-container">
+                <span class="language-label">German</span>
+                <span class="language-value">Good</span>
+            </div>
+        </div>
+    </section>
+    <hr />
+</body>
+
+</html>
