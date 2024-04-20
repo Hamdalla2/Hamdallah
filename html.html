@@ -16,6 +16,23 @@
             font-family: "Google sans";
             font-style: italic;
 
+            &.dark-mode {
+                color: white;
+                background-color: #333;
+
+                a {
+                    color: white;
+                }
+
+                .dark-mode-switch {
+                    background-color: white;
+
+                    &::after {
+                        background-color: black;
+                        transform: translate(25px);
+                    }
+                }
+            }
         }
 
         p {
@@ -44,10 +61,36 @@
             justify-content: center;
             gap: 30px;
 
-            @media (max-width: 480px) {
+            @media (max-width: 570px) {
                 flex-direction: column;
                 gap: 0;
                 align-items: center;
+            }
+        }
+
+        .dark-mode-switch {
+            border-radius: 30px;
+            height: 30px;
+            width: 60px;
+            position: absolute;
+            top: 17px;
+            right: 10px;
+            border: none;
+            outline: none;
+            background-color: black;
+
+            @media (max-width: 570px) {
+                top: 57px;
+            }
+
+            &::after {
+                content: " ";
+                display: block;
+                background: white;
+                height: 24px;
+                width: 24px;
+                border-radius: 50px;
+                transition: transform 500ms;
             }
         }
 
@@ -143,6 +186,7 @@
             align-items: center;
         }
 
+        .company-name,
         .company-position {
             text-align: center;
         }
@@ -164,6 +208,7 @@
 </head>
 
 <body>
+    <button class="dark-mode-switch" onclick="darkMode()"></button>
     <div class="page-title">
         <span class="my-name">Hamdallah Fatayer</span><span class="my-job colored">Developer</span>
     </div>
@@ -291,8 +336,8 @@
             <a target="_blank" href="https://www.xngage.com/" class="company" title="xngage">
                 <img src="https://i.imgur.com/9AJWK2m.png" class="company-image" alt="xngage" />
                 <div class="company-title">
-                    <span class="company-name">Xngage Company</span>
-                    <span class="company-position">Projects as a Frontend Developer</span>
+                    <span class="company-name">Xngage</span>
+                    <span class="company-position">Frontend Developer</span>
                 </div>
                 <span class="working-period">2022 - Now</span>
             </a>
@@ -334,13 +379,25 @@
                 <a target="_blank" href="https://www.pacesupply.com/" class="project" title="pace">
                     <img src="https://i.imgur.com/qCkbYXQ.png" class="project-image" alt="pace" />
                 </a>
+                <a target="_blank" href="https://www.marketlab.com/" class="project" title="marketlab">
+                    <img src="https://i.imgur.com/LBJO9Pr.png" class="project-image" alt="marketlab" />
+                </a>
+                <a target="_blank" href="https://www.southerncarlson.com/" class="project" title="southerncarlson">
+                    <img src="https://i.imgur.com/pn4sZjc.png" class="project-image" alt="southerncarlson" />
+                </a>
+                <a target="_blank" href="https://www.stauffersafety.com/" class="project" title="stauffer">
+                    <img src="https://i.imgur.com/YCIDeb4.png" class="project-image" alt="stauffer" />
+                </a>
+                <a target="_blank" href="https://www.ivalco.com/" class="project" title="ivalco">
+                    <img src="https://i.imgur.com/h5OtwtB.png" class="project-image" alt="ivalco" />
+                </a>
             </div>
             <hr />
             <a target="_blank" href="https://www.itgsoftware.com/" class="company" title="itg">
                 <img src="https://i.imgur.com/D3invVR.png" class="company-image" alt="itg" />
                 <div class="company-title">
-                    <span class="company-name">Infinite Tiers Group Company</span>
-                    <span class="company-position">Projects as a Backend Developer</span>
+                    <span class="company-name">Infinite Tiers Group</span>
+                    <span class="company-position">Backend Developer</span>
                 </div>
                 <span class="working-period">2021 - 2022</span>
             </a>
@@ -362,8 +419,8 @@
             <a target="_blank" href="https://www.linkedin.com/company/rebootkamparchive/" class="company" title="rbk">
                 <img src="https://i.imgur.com/PDi3q8L.png" class="company-image" alt="rbk" />
                 <div class="company-title">
-                    <span class="company-name">ReBootKamp Course</span>
-                    <span class="company-position">Projects while training</span>
+                    <span class="company-name">ReBootKamp</span>
+                    <span class="company-position">Training</span>
                 </div>
                 <span class="working-period">2020 - 2021</span>
             </a>
@@ -419,6 +476,9 @@
     <hr />
     <script type="text/javascript">
         document.getElementById("age").innerHTML = Math.floor((new Date() - new Date("1993-05-17")) / (1000 * 60 * 60 * 24 * 365));
+        const darkMode = () => {
+            document.body.classList.toggle("dark-mode");
+        }
     </script>
 </body>
 
