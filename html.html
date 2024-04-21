@@ -31,6 +31,16 @@
                         background-color: black;
                         transform: translate(25px);
                     }
+
+                    &::before {
+                        transform: translate(0);
+                        background-color: gold;
+                        box-shadow: 0 0 10px red;
+                        height: 15px;
+                        width: 15px;
+                        top: 8px;
+                        left: 8px;
+                    }
                 }
             }
         }
@@ -91,6 +101,18 @@
                 width: 24px;
                 border-radius: 50px;
                 transition: transform 500ms;
+            }
+
+            &::before {
+                content: " ";
+                display: block;
+                background-color: transparent;
+                box-shadow: inset -5px -3px 0 0 white;
+                height: 24px;
+                width: 24px;
+                transform: translate(25px);
+                border-radius: 50%;
+                position: absolute;
             }
         }
 
