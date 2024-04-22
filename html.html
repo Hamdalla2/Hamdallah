@@ -52,6 +52,16 @@
         a {
             color: #404040;
             text-decoration: none;
+
+            &.selectable {
+                padding: 2px;
+                border: 2px solid transparent;
+                border-radius: 10px;
+
+                &:hover {
+                    border-color: blue;
+                }
+            }
         }
 
         section {
@@ -187,6 +197,10 @@
             }
         }
 
+        .project {
+            height: 35px;
+        }
+
         .projects-container {
             display: flex;
             flex-wrap: wrap;
@@ -242,112 +256,123 @@
             </div>
             <div class="content">
                 <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    class="technology-container" title="javascript">
+                    class="technology-container selectable" title="javascript">
                     <img src="https://i.imgur.com/Y4wEjL3.png" class="technology-image" alt="javascript" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="technology-container"
-                    title="css">
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    class="technology-container selectable" title="css">
                     <img src="https://i.imgur.com/GBKFdd0.png" class="technology-image" alt="css" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://www.typescriptlang.org/docs/" class="technology-container"
+                <a target="_blank" href="https://www.typescriptlang.org/docs/" class="technology-container selectable"
                     title="typescript">
                     <img src="https://i.imgur.com/IOfMOAG.png" class="technology-image" alt="typescript" />
                     <p>80</p>
                 </a>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="technology-container"
-                    title="html">
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    class="technology-container selectable" title="html">
                     <img src="https://i.imgur.com/rIaFQGP.png" class="technology-image" alt="html" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://git-scm.com/doc" class="technology-container" title="git">
+                <a target="_blank" href="https://git-scm.com/doc" class="technology-container selectable" title="git">
                     <img src="https://i.imgur.com/Ry039Uj.png" class="technology-image" alt="git" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://api.jquery.com/" class="technology-container" title="jquery">
+                <a target="_blank" href="https://api.jquery.com/" class="technology-container selectable"
+                    title="jquery">
                     <img src="https://i.imgur.com/4vlzN7c.png" class="technology-image" alt="jquery" />
                     <p>80</p>
                 </a>
                 <a target="_blank" href="https://legacy.reactjs.org/docs/getting-started.html"
-                    class="technology-container" title="react">
+                    class="technology-container selectable" title="react">
                     <img src="https://i.imgur.com/asSiyKo.png" class="technology-image" alt="react" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://redux.js.org/" class="technology-container" title="redux">
+                <a target="_blank" href="https://redux.js.org/" class="technology-container selectable" title="redux">
                     <img src="https://i.imgur.com/W4Aai1C.png" class="technology-image" alt="redux" />
                     <p>50</p>
                 </a>
-                <a target="_blank" href="https://nodejs.org/fa/docs" class="technology-container" title="nodejs">
+                <a target="_blank" href="https://nodejs.org/fa/docs" class="technology-container selectable"
+                    title="nodejs">
                     <img src="https://i.imgur.com/ltUblIq.png" class="technology-image" alt="nodejs" />
                     <p>100</p>
                 </a>
-                <a target="_blank" href="https://docs.python.org/3/" class="technology-container" title="python">
+                <a target="_blank" href="https://docs.python.org/3/" class="technology-container selectable"
+                    title="python">
                     <img src="https://i.imgur.com/6zLNebP.png" class="technology-image" alt="python" />
                     <p>5</p>
                 </a>
-                <a target="_blank" href="https://angular.io/docs" class="technology-container" title="angular">
+                <a target="_blank" href="https://angular.io/docs" class="technology-container selectable"
+                    title="angular">
                     <img src="https://i.imgur.com/07m9ty0.png" class="technology-image" alt="angular" />
                     <p>10</p>
                 </a>
-                <a target="_blank" href="https://www.mongodb.com/docs/" class="technology-container" title="mongodb">
+                <a target="_blank" href="https://www.mongodb.com/docs/" class="technology-container selectable"
+                    title="mongodb">
                     <img src="https://i.imgur.com/xpYGY6F.png" class="technology-image" alt="mongodb" />
                     <p>20</p>
                 </a>
-                <a target="_blank" href="https://reactnative.dev/docs/getting-started" class="technology-container"
-                    title="react native">
+                <a target="_blank" href="https://reactnative.dev/docs/getting-started"
+                    class="technology-container selectable" title="react native">
                     <img src="https://i.imgur.com/F392Iji.png" class="technology-image" alt="react native" />
                     <p>3</p>
                 </a>
-                <a target="_blank" href="https://dev.mysql.com/doc/" class="technology-container" title="mysql">
+                <a target="_blank" href="https://dev.mysql.com/doc/" class="technology-container selectable"
+                    title="mysql">
                     <img src="https://i.imgur.com/oNgOHhN.png" class="technology-image" alt="mysql" />
                     <p>3</p>
                 </a>
-                <a target="_blank" href="https://expressjs.com/" class="technology-container" title="expressjs">
+                <a target="_blank" href="https://expressjs.com/" class="technology-container selectable"
+                    title="expressjs">
                     <img src="https://i.imgur.com/OcIdNEs.png" class="technology-image" alt="expressjs" />
                     <p>6</p>
                 </a>
-                <a target="_blank" href="https://docs.docker.com/" class="technology-container" title="docker">
+                <a target="_blank" href="https://docs.docker.com/" class="technology-container selectable"
+                    title="docker">
                     <img src="https://i.imgur.com/uzkBrGg.png" class="technology-image" alt="docker" />
                     <p>5</p>
                 </a>
-                <a target="_blank" href="https://docs.oracle.com/en/java/" class="technology-container" title="java">
+                <a target="_blank" href="https://docs.oracle.com/en/java/" class="technology-container selectable"
+                    title="java">
                     <img src="https://i.imgur.com/eoYl070.png" class="technology-image" alt="java" />
                     <p>2</p>
                 </a>
-                <a target="_blank" href="https://www.php.net/docs.php" class="technology-container" title="php">
+                <a target="_blank" href="https://www.php.net/docs.php" class="technology-container selectable"
+                    title="php">
                     <img src="https://i.imgur.com/oX3psrK.png" class="technology-image" alt="php" />
                     <p>2</p>
                 </a>
-                <a target="_blank" href="https://www.linux.org/" class="technology-container" title="linux">
+                <a target="_blank" href="https://www.linux.org/" class="technology-container selectable" title="linux">
                     <img src="https://i.imgur.com/LGNqemh.png" class="technology-image" alt="linux" />
                     <p>3</p>
                 </a>
-                <a target="_blank" href="https://www.postgresql.org/docs/" class="technology-container"
+                <a target="_blank" href="https://www.postgresql.org/docs/" class="technology-container selectable"
                     title="postgres">
                     <img src="https://i.imgur.com/mszkP80.png" class="technology-image" alt="postgres" />
                     <p>3</p>
                 </a>
-                <a target="_blank" href="https://threejs.org/docs/" class="technology-container" title="threejs">
+                <a target="_blank" href="https://threejs.org/docs/" class="technology-container selectable"
+                    title="threejs">
                     <img src="https://i.imgur.com/8Uwj6xP.png" class="technology-image" alt="threejs" />
                     <p>1</p>
                 </a>
-                <a target="_blank" href="https://flask.palletsprojects.com/en/2.3.x/" class="technology-container"
-                    title="flask">
+                <a target="_blank" href="https://flask.palletsprojects.com/en/2.3.x/"
+                    class="technology-container selectable" title="flask">
                     <img src="https://i.imgur.com/lcFqMUw.png" class="technology-image" alt="flask" />
                     <p>3</p>
                 </a>
-                <a target="_blank" href="https://docs.djangoproject.com/en/4.2/" class="technology-container"
+                <a target="_blank" href="https://docs.djangoproject.com/en/4.2/" class="technology-container selectable"
                     title="django">
                     <img src="https://i.imgur.com/8vDEqM7.png" class="technology-image" alt="django" />
                     <p>2</p>
                 </a>
-                <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/" class="technology-container"
-                    title="c#">
+                <a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+                    class="technology-container selectable" title="c#">
                     <img src="https://i.imgur.com/jshKfif.png" class="technology-image" alt="c#" />
                     <p>1</p>
                 </a>
-                <a target="_blank" href="https://jestjs.io/docs/getting-started" class="technology-container"
+                <a target="_blank" href="https://jestjs.io/docs/getting-started" class="technology-container selectable"
                     title="jest">
                     <img src="https://i.imgur.com/8fFm5i6.png" class="technology-image" alt="jest" />
                     <p>1</p>
@@ -365,52 +390,54 @@
             </a>
 
             <div class="projects-container">
-                <a target="_blank" href="https://www.plumberssupplyco.com/" class="project" title="plumbers">
+                <a target="_blank" href="https://www.plumberssupplyco.com/" class="project selectable" title="plumbers">
                     <img src="https://i.imgur.com/6gPTKCX.png" class="project-image" alt="plumbers" />
                 </a>
-                <a target="_blank" href="https://www.torrco.com/" class="project" title="torrco">
+                <a target="_blank" href="https://www.torrco.com/" class="project selectable" title="torrco">
                     <img src="https://i.imgur.com/cv7yI0Y.png" class="project-image" alt="torrco" />
                 </a>
-                <a target="_blank" href="https://eecoonline.com/" class="project" title="eeco">
+                <a target="_blank" href="https://eecoonline.com/" class="project selectable" title="eeco">
                     <img src="https://i.imgur.com/7N2CjoS.png" class="project-image" alt="eeco" />
                 </a>
-                <a target="_blank" href="https://www.sonance.com/" class="project" title="sonance">
+                <a target="_blank" href="https://www.sonance.com/" class="project selectable" title="sonance">
                     <img src="https://i.imgur.com/vtCDBQR.png" class="project-image" alt="sonance" />
                 </a>
-                <a target="_blank" href="https://www.kellersupply.com/home.php" class="project" title="keller">
+                <a target="_blank" href="https://www.kellersupply.com/home.php" class="project selectable"
+                    title="keller">
                     <img src="https://i.imgur.com/NZ2h1NE.png" class="project-image" alt="keller" />
                 </a>
-                <a target="_blank" href="https://www.wernerelectric.com/" class="project" title="werner">
+                <a target="_blank" href="https://www.wernerelectric.com/" class="project selectable" title="werner">
                     <img src="https://i.imgur.com/g0tcwk3.png" class="project-image" alt="werner" />
                 </a>
-                <a target="_blank" href="https://www.pacificplumbing.com/" class="project" title="pacific">
+                <a target="_blank" href="https://www.pacificplumbing.com/" class="project selectable" title="pacific">
                     <img src="https://i.imgur.com/MyEEQtB.png" class="project-image" alt="pacific" />
                 </a>
-                <a target="_blank" href="https://www.guestsupply.com/" class="project" title="guestsupply">
+                <a target="_blank" href="https://www.guestsupply.com/" class="project selectable" title="guestsupply">
                     <img src="https://i.imgur.com/WQqH75J.png" class="project-image" alt="guestsupply" />
                 </a>
-                <a target="_blank" href="https://www.shopibt.com/" class="project" title="ibt">
+                <a target="_blank" href="https://www.shopibt.com/" class="project selectable" title="ibt">
                     <img src="https://i.imgur.com/dODOchn.png" class="project-image" alt="ibt" />
                 </a>
-                <a target="_blank" href="https://www.fortgarryindustries.com/" class="project" title="fgi">
+                <a target="_blank" href="https://www.fortgarryindustries.com/" class="project selectable" title="fgi">
                     <img src="https://i.imgur.com/ha6T3Sy.png" class="project-image" alt="fgi" />
                 </a>
-                <a target="_blank" href="https://www.easternfirst.com/" class="project" title="eastern">
+                <a target="_blank" href="https://www.easternfirst.com/" class="project selectable" title="eastern">
                     <img src="https://i.imgur.com/LuX4JEb.png" class="project-image" alt="eastern" />
                 </a>
-                <a target="_blank" href="https://www.pacesupply.com/" class="project" title="pace">
+                <a target="_blank" href="https://www.pacesupply.com/" class="project selectable" title="pace">
                     <img src="https://i.imgur.com/qCkbYXQ.png" class="project-image" alt="pace" />
                 </a>
-                <a target="_blank" href="https://www.marketlab.com/" class="project" title="marketlab">
+                <a target="_blank" href="https://www.marketlab.com/" class="project selectable" title="marketlab">
                     <img src="https://i.imgur.com/LBJO9Pr.png" class="project-image" alt="marketlab" />
                 </a>
-                <a target="_blank" href="https://www.southerncarlson.com/" class="project" title="southerncarlson">
+                <a target="_blank" href="https://www.southerncarlson.com/" class="project selectable"
+                    title="southerncarlson">
                     <img src="https://i.imgur.com/pn4sZjc.png" class="project-image" alt="southerncarlson" />
                 </a>
-                <a target="_blank" href="https://www.stauffersafety.com/" class="project" title="stauffer">
+                <a target="_blank" href="https://www.stauffersafety.com/" class="project selectable" title="stauffer">
                     <img src="https://i.imgur.com/YCIDeb4.png" class="project-image" alt="stauffer" />
                 </a>
-                <a target="_blank" href="https://www.ivalco.com/" class="project" title="ivalco">
+                <a target="_blank" href="https://www.ivalco.com/" class="project selectable" title="ivalco">
                     <img src="https://i.imgur.com/h5OtwtB.png" class="project-image" alt="ivalco" />
                 </a>
             </div>
@@ -424,16 +451,17 @@
                 <span class="working-period">2021 - 2022</span>
             </a>
             <div class="projects-container">
-                <a target="_blank" href="https://www.partycity.com/" class="project" title="partycity">
+                <a target="_blank" href="https://www.partycity.com/" class="project selectable" title="partycity">
                     <img src="https://i.imgur.com/ru9P3hk.png" class="project-image" alt="partycity" />
                 </a>
-                <a target="_blank" href="https://www.saksfifthavenue.com/" class="project" title="saksfifthavenue">
+                <a target="_blank" href="https://www.saksfifthavenue.com/" class="project selectable"
+                    title="saksfifthavenue">
                     <img src="https://i.imgur.com/bPgUsmm.png" class="project-image" alt="saksfifthavenue" />
                 </a>
-                <a target="_blank" href="https://www.birkenstock.com/us" class="project" title="birkenstock">
+                <a target="_blank" href="https://www.birkenstock.com/us" class="project selectable" title="birkenstock">
                     <img src="https://i.imgur.com/19ySnOr.png" class="project-image" alt="birkenstock" />
                 </a>
-                <a target="_blank" href="https://www.saksoff5th.com/" class="project" title="saksoff5th">
+                <a target="_blank" href="https://www.saksoff5th.com/" class="project selectable" title="saksoff5th">
                     <img src="https://i.imgur.com/SXnjiF2.png" class="project-image" alt="saksoff5th" />
                 </a>
             </div>
@@ -447,10 +475,12 @@
                 <span class="working-period">2020 - 2021</span>
             </a>
             <div class="projects-container">
-                <a target="_blank" href="https://github.com/Hamdalla2/Twittler" class="project" title="twittler">
+                <a target="_blank" href="https://github.com/Hamdalla2/Twittler" class="project selectable"
+                    title="twittler">
                     <img src="https://i.imgur.com/zIZlmr4.png" class="project-image" alt="twittler" />
                 </a>
-                <a target="_blank" href="https://github.com/Hamdalla2/family-todo" class="project" title="family-todo">
+                <a target="_blank" href="https://github.com/Hamdalla2/family-todo" class="project selectable"
+                    title="family-todo">
                     <img src="https://i.imgur.com/fBd0vvp.png" class="project-image" alt="family-todo" />
                 </a>
             </div>
